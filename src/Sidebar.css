@@ -1,0 +1,44 @@
+.sidebar {
+  background-color: #fff;
+  height: 100vh;
+  width: 250px;
+  padding: 10px;
+  transition: all 350ms linear;
+  transform: translateX(-100%);
+  z-index: 100;
+  position: fixed;
+  top: 60px;
+  left: 0;
+}
+.overlay {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 60px;
+  bottom: 0;
+  background-color: #00000080;
+  transition: all 350ms linear;
+  opacity: 0.4;
+}
+.overlay.active {
+  visibility: visible;
+}
+.sidebar.active {
+  transform: translateX(0);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+li:hover {
+  background-color: rgb(161, 161, 161);
+  border-radius: 10px;
+}

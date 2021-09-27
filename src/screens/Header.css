@@ -1,0 +1,110 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  padding: 5px;
+  width: 100%;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__left > img {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.header__right__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 25px;
+}
+.header__right__details > p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.try {
+  text-align: center;
+  width: 120px;
+  margin-left: 20px;
+  font-size: 0.8rem;
+  color: rgb(194, 143, 68);
+}
+.try:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.serch__form > form {
+  display: flex;
+  margin-left: 8px;
+  width: 300px;
+  height: 35px;
+  background-color: rgb(228, 235, 238);
+  max-height: 35px;
+  border-radius: 5px;
+}
+.serch__form > form > img {
+  height: 15px;
+  width: 15px;
+  align-items: center;
+  margin-top: 8px;
+  margin-left: 20px;
+}
+.serch__form > form > input {
+  border: none;
+  outline-width: 0;
+  padding: 10px;
+  font-size: 1rem;
+  width: 250px;
+  background-color: rgb(228, 235, 238);
+}
+.header__right__details__detail {
+  display: flex;
+  align-items: center;
+}
+.header__right__details__detail > p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 1100px) {
+  .header {
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .header__right__details > p {
+    display: none;
+  }
+  .header__right__details__detail {
+    display: none;
+  }
+  .serch__form > form > input {
+    display: none;
+  }
+  .serch__form > form {
+    width: 55px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .header__right__details > p {
+    display: none;
+  }
+  .header__right__details__detail {
+    display: none;
+  }
+  .serch__form > form > input {
+    display: none;
+  }
+}
